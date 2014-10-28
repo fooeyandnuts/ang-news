@@ -42,6 +42,10 @@ var app = angular
         }
       }
     })
+    .when('/users/:userId', {
+      templateUrl: 'views/profile.html',
+      controller: 'ProfileCtrl'
+    })
     .when('/', {
       templateUrl: 'views/posts.html',
       controller: 'PostsCtrl'
